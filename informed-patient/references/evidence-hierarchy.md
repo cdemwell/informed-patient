@@ -68,7 +68,7 @@ Not all evidence is equal. A single person's story about what worked for them is
 "Statistically significant" means the result probably isn't due to random chance. But it doesn't tell you how *big* the effect is. A medication might have a statistically significant effect on pain but only reduce it by 0.3 points on a 10-point scale — real, but maybe not worth the side effects. Always ask: how *much* did it help?
 
 ### Number needed to treat (NNT)
-How many people need to take a treatment for one person to benefit. NNT of 2 = very effective (treat 2 people, 1 benefits). NNT of 100 = modest (treat 100 people, 1 benefits beyond what would happen without treatment). Useful for putting treatment benefits in perspective.
+How many people need to take a treatment for one person to benefit. A higher NNT indicates that treatment is less effective. NNT of 2 = very effective (treat 2 people, 1 benefits). NNT of 100 = modest (treat 100 people, 1 benefits beyond what would happen without treatment). Useful for putting treatment benefits in perspective.
 
 ### Base rates
 How common a condition actually is in the relevant population. Rare conditions are still rare even when your symptoms match. This isn't a reason to dismiss the possibility. It's a reason to consider the more common explanations too and let the evidence guide you.
