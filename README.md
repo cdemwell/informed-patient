@@ -2,7 +2,7 @@
 
 This Claude Skill provides a framework to help you use Claude to research medical evidence to inform specific health questions, primarily designed around use cases like trying to understand and organize questions about symptoms, preparing for an upcoming medical appointment, and gathering evidence for either differential diagnosis questions or condition progression. 
 
-When you ask a medical question, Claude will walk you through a semi-structured cognitive interview to elicit context for its search, then conduct a search following a set of guidelines for evidence robustness. The skill provides two potential search "modes": by default it uses a more structured search across a defined evidence source hierarchy, but suggests an open search mode for scenarios where a user raises a more complex questions that falls between conditions or for a more exploratory mode when the opinionated search results are thin. 
+When you ask a medical question, Claude will walk you through a semi-structured cognitive interview to elicit context for its search, then conduct a search following a set of guidelines for evidence robustness. The skill provides two potential search "modes": by default it uses a more structured search across a defined evidence source hierarchy, but suggests an open search mode for scenarios where you raise a more complex questions that falls between conditions, when you want a more exploratory mode, or when the opinionated search results are thin. 
 
 Alongside searching and synthesizing sources, Claude will weigh the strength of evidence or relevant concerns according to a set of evidence "red flags." The results will be shared in a "health evidence review," including sources, search terms, and evidence red flags to be aware of, and questions generated from the exercise to bring to your healthcare team. 
 
@@ -77,15 +77,15 @@ You can actively experiment with adapting this skill to your needs. You may want
 
 ## What this Skill pushes against
 
-One key risk in using AI for healthcare questions is the model defaults to provide "helpful" confirmatory information and to summarize on behalf of users. Additionally, the models frequently encode poor scientific metascience practices, such as over-extrapolating from a single study, or taking findings as "proven" merely by statistical significance without considering multiple factors such as the type of people studied, the quality and depth of data, and the accuracy of measurements. 
+One key risk in using AI for healthcare questions is the model defaults to provide "helpful" confirmatory information and to summarize on behalf of users. Additionally, the models frequently encode poor metascience practices, such as over-extrapolating from a single study, or taking findings as "proven" merely by statistical significance without considering multiple factors such as the type of people studied, the quality and depth of data, and the accuracy of measurements. 
 
 When users simply ask AI models about health in basic prompts, this can lead to models generating answers that overstate evidence, or encourage Claude to try to "read tea leaves" in the symptomology and user descriptions of symptoms. 
 
 Additionally, causality (what leads to what) in health is multivariate, and complex, and difficult to figure out. Many symptoms can look similar but be caused by different things, and the same condition can present differently for different individuals. The aim of this skill is not to provide "the answer" or end of a question, but to sharpen your investigatory skills and help you learn.
 
-In keeping with that vision, in this Skill, I have used opinionated evidence-based principles to design for eliciting diverse and functionally-relevant descriptions of symptomology, for assessing the clinical literature, and for keeping in mind the complex causality of healthcare decision-making. 
+In keeping with that vision, in this Skill, I have used opinionated evidence-based principles to design for eliciting diverse and functionally-relevant descriptions of symptomology, for assessing the clinical literature, and for keeping in mind the complex causality of healthcare decision-making. Going through an iterative process (intake, search for sources, source summaries, evidence red flag evaluation, synthesis) introduces step-by-step thinking and more reflection, while still giving you AI assistance. 
 
-For instance, I've made design choices in this skill to push Claude to help you think about competing possibilities, assess the strength of evidence, and generate questions for your healthcare team. It should not generate confirmatory statements or "tell you what you have." In keeping with scientific evidence principles for careful diagnosis, it should help you notice things such as when you are "anchoring" on an initial hypothesis or explanation, and encourage testing alternative hypotheses. 
+Drawing from the research literature around complex patient care and my experience with evidence thinking, I've made design choices in this skill to push Claude to help you think about competing possibilities, assess the strength of evidence, and generate questions for your healthcare team. It should not generate confirmatory statements or "tell you what you have." In keeping with scientific evidence principles for careful diagnosis, it should help you notice things such as when you are "anchoring" on an initial hypothesis or explanation, and encourage testing alternative hypotheses. 
 
 These design choices are also reflected in: 
 
@@ -148,7 +148,7 @@ Specific limitations to be aware of:
 - **Search tool limitations — PubMed site: queries.** The skill instructs Claude to run `site:pubmed.ncbi.nlm.nih.gov` queries, but web search tools don't reliably honor `site:` operators. Claude will fall back to general queries that return PubMed/PMC results, but this is less precise than a native PubMed search. **Users with a PubMed MCP connector** can layer that in for more reliable and comprehensive PubMed retrieval — tell Claude to use it when searching medical literature.
 - **Other site-specific queries (Cochrane, NICE)** are subject to the same tool limitation. Results have been verified for well-studied conditions (e.g., hypertension), but reliability across all conditions is not guaranteed.
 - **Not clinically validated.** This skill has not been reviewed by clinicians or evaluated in a clinical context. It is a structured reasoning aid, not a clinical instrument.
-- **Evidence sources are primarily US and UK-based.** The search hierarchy prioritizes Cochrane, NICE, AHRQ, the USPSTF, and PubMed. These are high-quality, widely used bodies, but they reflect a particular slice of the global clinical evidence landscape. Guidelines from the European Medicines Agency, WHO, or national health bodies in other countries may differ and may be equally or more relevant depending on where you receive care. If you have specific sources you want prioritized, tell Claude explicitly at the start of the session: "Also search [source] as part of the evidence hierarchy." The skill is designed to be adaptable.
+- **Evidence sources are primarily US and UK-based.** The search hierarchy prioritizes sources I am most familiar with, Cochrane, NICE, AHRQ, the USPSTF, and PubMed. These are high-quality, widely used bodies, but they reflect a particular slice of the global clinical evidence landscape. Guidelines from the European Medicines Agency, WHO, or national health bodies in other countries may differ and may be equally or more relevant depending on where you receive care. If you have specific sources you want prioritized, tell Claude explicitly at the start of the session: "Also search [source] as part of the evidence hierarchy." The skill is designed to be adaptable.
 
 
 ---
@@ -165,11 +165,17 @@ Specific limitations to be aware of:
 
 ---
 
-## Author 
+## Sharing, Contributing & Author 
+
+I have put a lot of work into making this skill work the way I like, so I may not accept suggestions with different visions for the skill. However if you find an error, have an idea for an extension, or have a suggestion for improvement I am more than happy to review. 
+
+If it helps you, I would love to hear about it. I am deeply interested in how we design better tooling for AI in complex social contexts. I always appreciate a shout-out or share of my work in public. You can find more of my writing about psychology and tech, and AI, at my newsletter: [Fight for the Human](https://www.fightforthehuman.com/).
 
 Dr. Cat Hicks
 
-I'm a psychological scientist studying software teams and technology work, an author, a public speaker, a research architect, and an empirical interventionist who builds radical research teams that put answers behind questions everyone is asking but few people are gathering real evidence about.
+Relevant to this skill and its design, I have significant personal experience navigating complex chronic health conditions, and have personally used this skill to advocate for my own health. 
+
+In my work life I'm a psychological scientist studying software teams and technology work, an author, a public speaker, a research architect, and an empirical interventionist who builds radical research teams that put answers behind questions everyone is asking but few people are gathering real evidence about.
 
 - Website: [drcathicks.com](https://www.drcathicks.com/)
 - Software Team & Eng Leadership Consulting: [catharsisinsight.com](https://catharsisinsight.com/)
