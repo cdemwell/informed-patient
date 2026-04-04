@@ -167,6 +167,7 @@ Specific limitations to be aware of:
 | `informed-patient/references/evidence-hierarchy.md` | How to explain study types in plain language |
 | `informed-patient/references/red-flags.md` | The 10 epistemic red flags |
 | `informed-patient/references/symptom-inventory-methodology.md` | Measurement science grounding for Phase 1 symptom elicitation |
+| `EVALUATION.md` | Test scenarios and pass criteria for verifying skill behavior |
 | `LICENSE.txt` | CC-BY-4.0 license |
 
 ---
