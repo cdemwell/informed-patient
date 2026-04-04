@@ -12,19 +12,13 @@ The aim of this skill is not to replace your healthcare team, but to guide your 
 
 ## Installation
 
-This repository is structured as a [Claude Code plugin](https://code.claude.com/docs/en/plugins). To install, run these commands in Claude Code:
+This repository is structured as a [Claude Code plugin](https://code.claude.com/docs/en/plugins). To install, run this command in Claude Code:
 
-1. Add the marketplace:
 ```
-/plugin marketplace add https://github.com/DrCatHicks/informed-patient.git
-```
-
-2. Install the plugin:
-```
-/plugin install informed-patient@informed-patient
+/plugin add https://github.com/DrCatHicks/informed-patient.git
 ```
 
-3. Restart Claude Code to activate.
+Then restart Claude Code to activate.
 
 For more on Claude Code plugins, see [the plugin documentation](https://code.claude.com/docs/en/plugins).
 
