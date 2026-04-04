@@ -71,7 +71,7 @@ Not all evidence is equal. A single person's story about what worked for them is
 How many people need to take a treatment for one person to benefit. A higher NNT indicates that treatment is less effective. NNT of 2 = very effective (treat 2 people, 1 benefits). NNT of 100 = modest (treat 100 people, 1 benefits beyond what would happen without treatment). Useful for putting treatment benefits in perspective.
 
 ### Base rates
-How common a condition actually is in the relevant population. Rare conditions are still rare even when your symptoms match. This isn't a reason to dismiss the possibility. It's a reason to consider the more common explanations too and let the evidence guide you.
+How common a condition actually is in the relevant population, or how common a certain scenario is when looking across a population. Base rates also shift with context: if you already have a known risk factor for a condition, the base rate among people like you may be meaningfully higher than the general population figure. Base rates can help contextualize rare conditions and likely explanations: rare conditions are still rare even when your symptoms appear to match. This isn't a reason to dismiss the possibility, but it is a reason to consider the more common explanations too and let the evidence guide you.
 
 ### Generalizability
 Do the study participants look like you? Many clinical trials have historically underrepresented women, older adults, people of color, and people with multiple conditions. If a study population doesn't match you, the results still have value, but the confidence that they apply to your specific case is lower.
