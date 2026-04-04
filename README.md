@@ -1,6 +1,6 @@
 # Informed Patient
 
-This Claude Skill provides a framework to help you use Claude to research the evidence to inform specific health questions, primarily designed around use cases like trying to understand and organize questions about symptoms, preparing for an upcoming medical appointment, and gathering evidence for either differential diagnosis questions or condition progression. 
+This Claude Skill provides a framework to help you use Claude to research medical evidence to inform specific health questions, primarily designed around use cases like trying to understand and organize questions about symptoms, preparing for an upcoming medical appointment, and gathering evidence for either differential diagnosis questions or condition progression. 
 
 When you ask a medical question, Claude will walk you through a semi-structured cognitive interview to elicit context for its search, then conduct a search following a set of guidelines for evidence robustness. The skill provides two potential search "modes": by default it uses a more structured search across a defined evidence source hierarchy, but suggests an open search mode for scenarios where a user raises a more complex questions that falls between conditions or for a more exploratory mode when the opinionated search results are thin. 
 
@@ -148,6 +148,8 @@ Specific limitations to be aware of:
 - **Search tool limitations — PubMed site: queries.** The skill instructs Claude to run `site:pubmed.ncbi.nlm.nih.gov` queries, but web search tools don't reliably honor `site:` operators. Claude will fall back to general queries that return PubMed/PMC results, but this is less precise than a native PubMed search. **Users with a PubMed MCP connector** can layer that in for more reliable and comprehensive PubMed retrieval — tell Claude to use it when searching medical literature.
 - **Other site-specific queries (Cochrane, NICE)** are subject to the same tool limitation. Results have been verified for well-studied conditions (e.g., hypertension), but reliability across all conditions is not guaranteed.
 - **Not clinically validated.** This skill has not been reviewed by clinicians or evaluated in a clinical context. It is a structured reasoning aid, not a clinical instrument.
+- **Evidence sources are primarily US and UK-based.** The search hierarchy prioritizes Cochrane, NICE, AHRQ, the USPSTF, and PubMed. These are high-quality, widely used bodies, but they reflect a particular slice of the global clinical evidence landscape. Guidelines from the European Medicines Agency, WHO, or national health bodies in other countries may differ and may be equally or more relevant depending on where you receive care. If you have specific sources you want prioritized, tell Claude explicitly at the start of the session: "Also search [source] as part of the evidence hierarchy." The skill is designed to be adaptable.
+
 
 ---
 
