@@ -182,7 +182,7 @@ About Me:
 
 Dr. Cat Hicks
 
-Relevant to this skill and its design, I have significant personal experience navigating complex chronic health conditions, and have personally used this skill to advocate for my own health. Most recently I have vetted this skill against months of specialist appoints and it helped me to correct a complex and deeply painful misdiagnosis; that experience is what inspired me to share it publicly.
+Relevant to this skill and its design, I have significant personal experience navigating complex chronic health conditions, and have personally used this skill to advocate for my own health. Most recently I have vetted this skill against months of specialist appointments and it helped me to correct a complex and deeply painful misdiagnosis; that experience is what inspired me to share it publicly.
 
 In my work life I'm a psychological scientist studying software teams and technology work, an author, a public speaker, a research architect, and an empirical interventionist who builds radical research teams that put answers behind questions everyone is asking but few people are gathering real evidence about.
 
