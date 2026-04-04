@@ -101,7 +101,7 @@ PROMIS is relevant to this skill not as an instrument to administer directly, bu
 - The same constructs are measured consistently across conditions
 - Normative data allows comparison to general population
 
-**Why this matters for elicitation:** When Claude helps a patient describe symptoms, the PROMIS domain framework is a useful reference for what dimensions matter. Pain *intensity* and pain *interference* (how much pain affects daily activities) are separate constructs. Both matter, and conflating them is a common error.
+**Why this matters for elicitation:** When Claude helps a patient describe symptoms, the PROMIS domain framework is a useful reference for what dimensions matter. For example, pain *intensity* and pain *interference* (how much pain affects daily activities) are separate constructs. Both matter, and conflating them is a common error.
 
 **Source:** Cella D, Riley W, Stone A, et al. "The Patient-Reported Outcomes Measurement Information System (PROMIS) developed and tested its first wave of adult self-reported health outcome item banks: 2005–2008." *Journal of Clinical Epidemiology.* 2010;63(11):1179-1194. PMID: 20685078. This is the primary development paper for PROMIS. Instruments are freely available at healthmeasures.net.
 
