@@ -145,7 +145,7 @@ Run on two conditions: one well-studied (Type 2 diabetes), one understudied (POT
 
 The skill has a specific required sequence. Complex multi-step skills commonly fail by skipping steps when the user provides a lot of information upfront, or when Claude rushes to be helpful. These tests deliberately create conditions where steps might be skipped.
 
-### The required sequence (Phase 1 → 2 → 2.5 → 3 → artifact)
+### The required sequence (Phase 1 → 2 → 3 → artifact)
 1. Ask branching questions (onset trigger, co-occurrence, diagnosis status, care context)
 2. Complete symptom interview including timeline and functional impact
 3. Confirm understanding before searching

@@ -152,7 +152,7 @@ Specific limitations to be aware of:
 
 - **Citation hallucination risk.** The skill instructs Claude to include source URLs and flag unverifiable identifiers, but hallucinated citations remain possible. Always click the links in the Sources Reviewed section and verify that the title and finding match what's described. 
 - **Search stops when evidence is solid.** The skill works through a source hierarchy (Cochrane → guidelines → primary research → FDA → patient advocacy) but stops when the evidence base is sufficient to support the user's questions. For well-studied conditions with strong Cochrane and guideline coverage, lower-priority sources may be skipped. If you want to force a complete search through all source types, tell Claude explicitly: "Search all source types in the hierarchy even if you find strong evidence early."
-- **Search tool limitations.** Claude's web search tool doesn't support `site:` scoped queries, so the skill uses keyword strategies (e.g., `[condition] systematic review PubMed`) to surface results from target databases. This is less precise than searching PubMed or Cochrane directly. Users who want comprehensive PubMed coverage should connect the **PubMed MCP connector** and tell Claude to use it when searching medical literature — that's the reliable upgrade path.
+- **Search tool limitations.** Claude's web search tool doesn't support `site:` scoped queries, so the skill uses keyword strategies (e.g., `[condition] systematic review PubMed`) to surface results from target databases. This is less precise than searching PubMed or Cochrane directly. Users who want comprehensive PubMed coverage should connect the **PubMed MCP connector** and tell Claude to use it when searching medical literature.
 - **Not clinically validated.** This skill has not been reviewed by clinicians or evaluated in a clinical context. It is a structured reasoning aid, not a clinical instrument.
 - **Evidence sources are primarily US and UK-based.** The search hierarchy prioritizes sources I am most familiar with, Cochrane, NICE, AHRQ, the USPSTF, and PubMed. These are high-quality, widely used bodies, but they reflect a particular slice of the global clinical evidence landscape. Guidelines from the European Medicines Agency, WHO, or national health bodies in other countries may differ and may be equally or more relevant depending on where you receive care. If you have specific sources you want prioritized, tell Claude explicitly at the start of the session: "Also search [source] as part of the evidence hierarchy." The skill is designed to be adaptable.
 
@@ -185,7 +185,7 @@ In my work life I'm a psychological scientist studying software teams and techno
 
 - Website: [drcathicks.com](https://www.drcathicks.com/)
 - Software Team & Eng Leadership Consulting: [catharsisinsight.com](https://catharsisinsight.com/)
-- Upcoming Book: [The Psychology of Software Teams (Available July 2026)](https://www.routledge.com/The-Psychology-of-Software-Teams/Hicks/p/book/9781032963389%20%20%20)
+- Upcoming Book: [The Psychology of Software Teams (Available July 2026)](https://www.routledge.com/The-Psychology-of-Software-Teams/Hicks/p/book/9781032963389)
 
 ## License
 
